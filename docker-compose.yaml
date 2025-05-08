@@ -1,0 +1,20 @@
+version: "1"
+services:
+  pychest:
+    image: py-chest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+  pylegs:
+    image: py-legs
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  pyarms:
+    image: py-arms
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
